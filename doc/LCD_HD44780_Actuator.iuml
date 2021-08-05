@@ -15,6 +15,14 @@
 LCD_Commands <|..# "Commands" LCD_HD44780_4Bit_Actuator
 LCD_Special_Character_Config <|..# "Special_Character_Config" LCD_HD44780_4Bit_Actuator
 
-LCD_HD44780_4Bit_Actuator "Register_Select_Pin\lEnable_Pin\lData_4_Pin\lData_5_Pin\lData_6_Pin\lData_7_Pin\lBacklight_Pin" #..> Discrete_Output
+LCD_HD44780_4Bit_Actuator "Register_Select_Pin\lEnable_Pin\lData_4_Pin\lData_5_Pin\lData_6_Pin\lData_7_Pin\lBacklight_Pin" #...> Discrete_Output
+note right on link
+LCD_HD44780_4Bit_Actuator defines a requirer ports for
+each of the seven discrete pins of the HD44780 chip.
+end note
+
+Discrete_Output .[hidden].> E_LCD_Config_Font
+Discrete_Output .[hidden].>  E_LCD_Config_Nb_Lines
+Discrete_Output .[hidden].>  E_LCD_Config_Nb_Columns
 
 @enduml
