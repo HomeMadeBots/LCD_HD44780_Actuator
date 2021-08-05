@@ -1,0 +1,16 @@
+@startuml
+
+class LCD_HD44780_4Bit_Actuator <<Component_Type>>
+{
+  Allows to manage a LCD device controlled with an
+  Hitachi HD44780 LCD controller.
+  It uses the 4-bit mode of the controller.
+  --
+  + Font_Configuration:E_LCD_Config_Font
+  + Number_Lines_Configuration:E_LCD_Config_Nb_Lines
+  + Number_Columns_Configuration:E_LCD_Config_Nb_Columns
+  --
+  + Initialize()
+}
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+enum E_LCD_Config_Nb_Columns <<Enumerated_Data_Type>>
+{
+  Allows to define a data representing
+  the number of columns of a LCD.
+  --
+  LCD_CONFIG_NB_COLUMNS_8
+  LCD_CONFIG_NB_COLUMNS_16
+  LCD_CONFIG_NB_COLUMNS_20
+  LCD_CONFIG_NB_COLUMNS_32
+  LCD_CONFIG_NB_COLUMNS_40
+  LCD_CONFIG_NB_COLUMNS_80
+}
+
+@enduml
