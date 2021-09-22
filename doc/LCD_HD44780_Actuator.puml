@@ -1,28 +1,8 @@
 @startuml
 
-!includeurl https://gist.githubusercontent.com/Arnaud-Bonneuil/c317a7a30bed7d64e2b5b1f558ac00cf/raw/sober.puml
-
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_Interfaces/main/doc/LCD_Special_Character_Config.puml
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_Interfaces/main/doc/LCD_Commands.puml
-
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_HD44780_Actuator/main/doc/LCD_HD44780_4Bit_Actuator.puml
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_HD44780_Actuator/main/doc/E_LCD_Config_Font.puml
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_HD44780_Actuator/main/doc/E_LCD_Config_Nb_Columns.puml
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_HD44780_Actuator/main/doc/E_LCD_Config_Nb_Lines.puml
-
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/Hardware_IO_Interfaces/main/doc/Discrete_Output.puml
-
-LCD_Commands <|..# "Commands" LCD_HD44780_4Bit_Actuator
-LCD_Special_Character_Config <|..# "Special_Character_Config" LCD_HD44780_4Bit_Actuator
-
-LCD_HD44780_4Bit_Actuator "Register_Select_Pin\lEnable_Pin\lData_4_Pin\lData_5_Pin\lData_6_Pin\lData_7_Pin\lBacklight_Pin" #...> Discrete_Output
-note right on link
-LCD_HD44780_4Bit_Actuator defines a requirer ports for
-each of the seven discrete pins of the HD44780 chip.
-end note
-
-Discrete_Output .[hidden].> E_LCD_Config_Font
-Discrete_Output .[hidden].>  E_LCD_Config_Nb_Lines
-Discrete_Output .[hidden].>  E_LCD_Config_Nb_Columns
+package LCD_HD44780_Actuator [
+  Gathers software elements allowing to manage
+  a LCD device drived by an HD44780.
+]
 
 @enduml
