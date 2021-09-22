@@ -29,6 +29,8 @@ The LCD_HD44780_Actuator package gathers :
 The following repository shall be retrieved :
 * [Hardware_IO_Interfaces](https://github.com/HomeMadeBots/Hardware_IO_Interfaces)
 * [LCD_Interfaces](https://github.com/HomeMadeBots/LCD_Interfaces)
+* [Bits_Management](https://github.com/HomeMadeBots/Bits_Management)
+* [Embedded_C_Framework](https://github.com/HomeMadeBots/Embedded_C_Framework)
 
 ## Use
 
